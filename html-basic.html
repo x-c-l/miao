@@ -42,7 +42,137 @@
 
   <br>
   <hr>
-
+  <ul>
+    <li>小学</li>
+     <ol>
+       <li>一年级</li>
+         <ol>
+           <li>上学期</li>
+           <li>下学期</li>
+         </ol>
+       <li>二年级</li>
+       <li>三年级</li>
+    </ol>
+    <li>中学</li>
+    <li>大学</li>
+  </ul>
+    <hr>
+    
+    <dl>
+      <dt>班级</dt>
+       <dd>三年二班</dd>
+      <dt>老师</dt>
+        <dd>张老师</dd>
+        <dd>王老师</dd>
+        <dd>李老师</dd>
+      <dt>学生</dt>
+        <dd>小明</dd>
+        <dd>豆豆</dd>
+    </dl>
+   <hr>
+   <h2>Google搜索</h2>
+   <br>
+    <form action="https://www.google.com.hk/search" target="_black">
+     <input type="text" name="a"> 
+    <button type="submit">在新窗口打开</button>
+    </form>
+    <hr>
+     <p>个人信息调查表</p>
+   <dl>
+     <dt>性别</dT>
+       <dd> 
+         <label><input type="radio" name="gender" value="male"> 男</label>
+         <label><input type="radio" name="gender" value="female"> 女</label></dd>
+     <dt>年龄</dt>
+       <dd>
+         <select name="sel">
+           <option value="" hidden>请选择</option>
+           <optgroup label="少年">
+           <option value="1岁到6岁" >1岁到6岁</option>
+           <option value="6岁到12岁">6岁到12岁</option>
+             
+       </dd>
+         <dd>
+         <optgroup label="中年">
+           <option value="20岁到30岁">20岁到30岁</option>
+           <option value="30到40岁">30到40岁</option>
+         </dd>
+       <dd>
+         <optgroup label="老年">
+           <option value="40岁到50岁">40岁到50岁</option>
+           <option value="50岁到36岁">50岁到60岁</option>
+          </optgroup>
+     </select>
+    </dd>
+    
+     <dt>生日</dt>
+     <input type="date" value="2021-11-04" name="birthday">
+     <dt>生辰</dt>
+     <input type="time" name="birthtime">
+     <dt>照片</dt>
+     <dd>
+     <input hidden type="file" name="avatar" id="avatar-upload">
+     <label for="avatar-upload">点我上传照片，我比文件上传按钮好看</label>
+    </dd>
+     <dt>自我介绍</dt>
+    <dd>
+          <textarea name="intro" cols="30" rows="10">&lt;/textarea></textarea>
+    </dd>
+    <hr>
+    <fieldset>
+      <legend>详细信息</legend>
+    <input type="text" name="a"> 
+    <input type="text" name="a"> 
+    <input type="text" name="a"> 
+    <input type="text" name="a"> 
+      </fieldset>
+    <input type="button" value="提交">
+    <input type="button" value="重置">
+   </form>
+  <hr>
+  <table border="1">
+    <tr>
+      <col>
+      <col bgcolor=red>   
+      <th>编号</th>
+      <th>品名</th>
+      <th>进价</th>
+      <th>出价</th>
+    </tr>
+    <tr>
+      <td>aaa</td>
+      <td>a</td>
+      <td rowspan="2">a</td>
+      <td>a</td>
+    </tr>
+    <tr>
+        
+      <td>a</td>
+      <td>a</td>
+      <td>a</td>
+    </tr>
+    <tr>
+      <td>a</td>
+      <td>a</td>
+      <td>a</td>
+      <td>a</td>
+    </tr>
+     <tr>
+      <td>a</td>
+      <td>a</td>
+      <td>a</td>
+      <td>a</td>
+    </tr>
+  </table>
+  <hr>
+  <img src="https://img95.699pic.com/photo/50046/5562.jpg_wh300.jpg" target="_blank" alt="" usemap="#aixin">
+  <map name="aixin">
+    <area shape="rect" coords="20,20,200,50" href="https://www.jd.com/" alt="">
+    <area shape="circle" coords="269,199,100" href="https://www.jd.com/" alt="">
+    <hr>
+     <a target="a" href="https://www.mi.com/">小米</a>
+    <br>
+    <iframe name="a" src="https://www.nodejs.org/" frameborder="1">
 </body>
 
 </html>
