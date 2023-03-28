@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  header {
+    background-color: black;
+    color: aliceblue;
+    min-width: 600px;
+  }
+  .p1 {
+    width: 600px;
+    margin: auto;
+  }
+  .p2 {
+    width: 600px;
+    margin:10px auto;
+  }
+  #d1{
+      width: 600px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+    div:not([id="d1"]){
+      width: 200px;
+      height: 30px;
+      border: 3px solid black;
+      background-color: red;
+      margin-top: 20px;
+      text-align: center;
+    }
+    div:nth-child(3n+2) {
+      margin-left: 220px;
+      margin-top: -35px;
+    }
+    div:nth-child(3n+3) {
+      margin-left: 440px;
+      margin-top: -35px;
+    }
+    .p3{
+      border: 1px dotted transparent;
+      border-bottom-color: blue;
+      width: 600px;
+      margin: auto;
+    }
+    .p5{
+      background-color: red;
+      text-align: center;
+    }
+
+
+
+
+
+</style>
+  <body style="">
+  <header><p class="p1">hello world 请调整浏览器窗口大小查看效果hello world 请调整浏览器窗口大小查看效果hello world 请调整浏览器窗口大小查看效果hello world 请调整浏览器窗口大小查看效果hello world 请调整浏览器窗口大小查看效果hello world 请调整浏览器窗口大小查看效果</p></header>
+  <p class="p2">页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px</p>
+  <div id="d1">
+    <div>宽180高40(包含边框)</div>
+    <div>产品</div>
+    <div>产品</div>
+    <div>水平间隙30px</div>
+    <div>产品</div>
+    <div>产品</div>
+    <div>垂直间隙15px</div>
+    <div>产品</div>
+    <div>产品</div>
+    <div>边框宽度3px</div>
+    <div>产品</div>
+    <div>产品</div>
+  </div>
+    <p class="p3">link</p>
+    <p class="p3">link</p>
+    <p class="p3">link</p>
+    <p class="p3">link</p>
+    <p class="p3 p4">link</p>
+    <p class="p5">©版权所有<br>本页所有布局均使用块元素</p>
+
+
+</body>
+</html>
