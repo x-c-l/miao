@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+.menu {
+  padding: 0;
+  list-style: none;
+  font-size:0;
+  width:200px;
+  height:200px;
+}
+
+.menu > li {
+  font-size:16px;
+  display:inline-block;
+
+}
+.menu li:hover {
+  background-color:red;
+}
+.menu li {
+  position:relative;
+  white-space:nowrap;
+  height:50px;
+  width:50px;
+  background-color:yellow;
+}
+
+.menu ul {
+  list-style:none;
+  padding:0;
+  display:none;
+  position:absolute;
+  left:0;
+  top:100%;
+}
+.menu ul li {
+  padding-right:5em;
+}
+
+.menu ul ul {
+  top:0;
+  left:100%;
+}
+.menu li:hover > ul {
+  display:block;
+}
+.menu li[data-shortcut]::after {
+  content:attr(data-shortcut);
+  position:absolute;
+  right:5px;
+  margin-right:10px;
+
+}
+.menu ul li ul::before {
+  content:'>';
+  position:absolute;
+  right:100%;
+  margin-right:5px;
+}
+
+
+
+
+
+  </style>
+</head>
+<body>
+  <ul class="menu">
+    <li>文件
+      <ul>
+        <li>打开</li>
+        <li>保存</li>
+        <li>另存为...
+          <ul>
+            <li>UTF8</li>
+            <li>GB2312</li>
+            <li>UTF16-BE
+              <ul>
+                <li>UTF8</li>
+                <li>GB2312</li>
+                <li>UTF16-BE</li>
+                <li>UTF16-LE
+                  <ul>
+                    <li>UTF8</li>
+                    <li>GB2312</li>
+                    <li>UTF16-BE</li>
+                    <li>UTF16-LE</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>UTF16-LE</li>
+          </ul>
+        </li>
+        <li>退出</li>
+        <li>关闭文件</li>
+      </ul>
+    </li>
+    <li>编辑
+      <ul>
+        <li>增加字号</li>
+        <li>缩小字号</li>
+        <li>放大</li>
+        <li>缩小</li>
+      </ul>
+    </li>
+    <li>视图</li>
+    <li>帮助</li>
+  </ul>
+</body>
+</html>
